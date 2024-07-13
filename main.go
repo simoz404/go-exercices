@@ -7,7 +7,8 @@ import (
 )
 
 func main() {
-	// arrByte := [2048]byte{}
-	// fmt.Println(arrByte[1]-1)
-	exercice.Brainfuck(os.Args[1])
+	if len(os.Args) != 3 {
+		return
+	}
+	exercice.Grouping(os.Args[1], os.Args[2])
 }
