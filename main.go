@@ -6,10 +6,9 @@ import (
 	exercice "go-exercices/exercices"
 )
 
-
 func main() {
-	fmt.Println(exercice.RectPerimeter(10, 2))
-	fmt.Println(exercice.RectPerimeter(434343, 898989))
-	fmt.Println(exercice.RectPerimeter(10, -2))
+	fmt.Println(exercice.RetainFirstHalf("This is the 1st halfThis is the 2nd half"))
+	fmt.Println(exercice.RetainFirstHalf("A"))
+	fmt.Println(exercice.RetainFirstHalf(""))
+	fmt.Println(exercice.RetainFirstHalf("Hello World"))
 }
-
