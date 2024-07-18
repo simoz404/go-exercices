@@ -2,13 +2,15 @@ package main
 
 import (
 	"fmt"
-	"os"
 
 	exercice "go-exercices/exercices"
 )
 
 func main() {
-	for i := 1; i < len(os.Args); i++ {
-		fmt.Println(exercice.Brackets(os.Args[1]))
-	}
+	fmt.Println(exercice.CamelToSnakeCase("HelloWorld"))
+	fmt.Println(exercice.CamelToSnakeCase("helloWorld"))
+	fmt.Println(exercice.CamelToSnakeCase("camelCase"))
+	fmt.Println(exercice.CamelToSnakeCase("CAMELtoSnackCASE"))
+	fmt.Println(exercice.CamelToSnakeCase("camelToSnakeCase"))
+	fmt.Println(exercice.CamelToSnakeCase("hey2"))
 }
