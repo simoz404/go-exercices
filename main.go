@@ -8,8 +8,8 @@ import (
 
 
 func main() {
-	fmt.Print(exercice.PrintIfNot("abcdefz"))
-	fmt.Print(exercice.PrintIfNot("abc"))
-	fmt.Print(exercice.PrintIfNot(""))
-	fmt.Print(exercice.PrintIfNot("14"))
+	fmt.Println(exercice.RectPerimeter(10, 2))
+	fmt.Println(exercice.RectPerimeter(434343, 898989))
+	fmt.Println(exercice.RectPerimeter(10, -2))
 }
+
