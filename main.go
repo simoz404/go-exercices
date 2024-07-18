@@ -1,14 +1,14 @@
 package main
 
 import (
-	"os"
+	"fmt"
 
 	exercice "go-exercices/exercices"
 )
 
 func main() {
-	if len(os.Args) != 3 {
-		return
-	}
-	exercice.Grouping(os.Args[1], os.Args[2])
+	fmt.Print(exercice.PrintIf("abcdefz"))
+	fmt.Print(exercice.PrintIf("abc"))
+	fmt.Print(exercice.PrintIf(""))
+	fmt.Print(exercice.PrintIf("14"))
 }
