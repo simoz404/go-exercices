@@ -6,9 +6,10 @@ import (
 	exercice "go-exercices/exercices"
 )
 
+
 func main() {
-	fmt.Print(exercice.PrintIf("abcdefz"))
-	fmt.Print(exercice.PrintIf("abc"))
-	fmt.Print(exercice.PrintIf(""))
-	fmt.Print(exercice.PrintIf("14"))
+	fmt.Print(exercice.PrintIfNot("abcdefz"))
+	fmt.Print(exercice.PrintIfNot("abc"))
+	fmt.Print(exercice.PrintIfNot(""))
+	fmt.Print(exercice.PrintIfNot("14"))
 }
