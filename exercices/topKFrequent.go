@@ -1,3 +1,5 @@
+package exercice
+
 func topKFrequent(nums []int, k int) []int {
     s := make(map[int]int)
     for _, v := range nums {

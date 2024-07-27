@@ -1,4 +1,4 @@
-package main
+package exercice
 
 import "fmt"
 
@@ -12,8 +12,4 @@ func PrintMemory(arr [10]byte) {
 		out += s + " "
 	}
 	fmt.Print(out)
-}
-
-func main() {
-	PrintMemory([10]byte{'h', 'e', 'l', 'l', 'o', 16, 21, '*'})
 }

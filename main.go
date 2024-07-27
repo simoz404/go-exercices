@@ -2,13 +2,11 @@ package main
 
 import (
 	"fmt"
-
 	exercice "go-exercices/exercices"
 )
 
 func main() {
-	fmt.Println(exercice.DigitLen(100, 10))
-	fmt.Println(exercice.DigitLen(100, 2))
-	fmt.Println(exercice.DigitLen(-100, 16))
-	fmt.Println(exercice.DigitLen(100, -1))
+	fmt.Println(exercice.ZipString("YouuungFellllas"))
+	fmt.Println(exercice.ZipString("Thee quuick browwn fox juumps over the laaazy dog"))
+	fmt.Println(exercice.ZipString("Helloo Therre!"))
 }
