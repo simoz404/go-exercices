@@ -8,8 +8,5 @@ import (
 
 
 func main() {
-	if len(os.Args) != 3 {
-		return
-	}
-	fmt.Println(exercice.Wdmatch(os.Args[1], os.Args[2]))
+	fmt.Println(exercice.Union(os.Args[1], os.Args[2]))
 }
