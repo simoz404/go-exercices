@@ -2,15 +2,17 @@ package main
 
 import (
 	"fmt"
+	"os"
 
 	exercice "go-exercices/exercices"
 )
 
 func main() {
-	fmt.Println(exercice.SaveAndMiss("123456789", 3))
-	fmt.Println(exercice.SaveAndMiss("abcdefghijklmnopqrstuvwyz", 3))
-	fmt.Println(exercice.SaveAndMiss("", 3))
-	fmt.Println(exercice.SaveAndMiss("hello you all ! ", 0))
-	fmt.Println(exercice.SaveAndMiss("what is your name?", 0))
-	fmt.Println(exercice.SaveAndMiss("go Exercise Save and Miss", -5))
+	var s []string
+	for i, v := range os.Args {
+		if i != 0 {
+			s = append(s, v)
+		}
+	}
+	fmt.Println(exercice.Reversestrcap(s))
 }
