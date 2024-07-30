@@ -3,7 +3,7 @@ package exercice
 func Reversestrcap(str []string) string {
 	var s string
 	var s1 string
-	for _, v := range str {
+	for j, v := range str {
 		for _, v1 := range v {
 			if v1 >= 'A' && v1 <= 'Z' {
 				s1 += string(v1 + 32)
@@ -25,7 +25,9 @@ func Reversestrcap(str []string) string {
 			}
 		}
 		s1 = ""
+		if j != len(str)-1 {
 		s += "\n"
+		}
 	}
 	return s
 }
