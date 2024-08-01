@@ -21,7 +21,16 @@ func Romannumbers(s string) {
 	}
 	var l string
 	for i := 0; i < len(str); i++ {
-		if i+4 <= len(str) && str[i:i+4] == "IIII" {
+		if (i+5 <= len(str) && str[i:i+5] == "VIIII") {
+			l += "IV"
+			i+= 4
+		} else if i+5 <= len(str) && str[i:i+5] == "LXXXX"  {
+			l =  "XL"
+			i+=4
+		} else if i+5 <= len(str) && str[i:i+5] == "DCCCC"  {
+			l += "CD"
+			i+=4
+		} else if i+4 <= len(str) && str[i:i+4] == "IIII" {
 			l += "IV"
 			i+= 3
 		} else if i+4 <= len(str) && str[i:i+4] == "XXXX" {
